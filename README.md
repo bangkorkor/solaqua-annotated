@@ -1,5 +1,7 @@
 # SOLAQUA-annotated
 
+**Alternative download:** [huggingface.co/datasets/bangkorkor/solaqua-annotated](https://huggingface.co/datasets/bangkorkor/solaqua-annotated)
+
 <p align="center">
   <img src="docs/sample_vision.gif" width="48%" alt="Vision — fish and net (MOT sequence 14-31-29)"/>
   <img src="docs/sample_sonar.gif" width="48%" alt="Sonar — fish and net (MOT sequence 14-31-29)"/>
@@ -64,7 +66,9 @@ frame_index, track_id, x, y, w, h, is_valid, class_id, visibility
 
 ## Getting Started
 
-**Clone**
+> **Recommended:** Download from [HuggingFace](https://huggingface.co/datasets/bangkorkor/solaqua-annotated) — faster and more reliable than cloning this repo.
+
+**Clone** (alternative)
 
 ```bash
 git clone https://github.com/bangkorkor/solaqua-annotated.git
