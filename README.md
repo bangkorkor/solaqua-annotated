@@ -7,7 +7,7 @@
 
 Annotated dataset for object detection and multi-object tracking (MOT) of fish and net structures in aquaculture net pens. Contains synchronized vision (monocular camera) and sonar (Ping 360) data collected from an ROV at a commercial salmon farm on 20 August 2024.
 
-Part of a master's thesis — full experiment code at [bangkorkor/aquaculture-perception](https://github.com/bangkorkor/aquaculture-perception).
+Raw data provided by [SINTEF Ocean](https://data.sintef.no/feature/fe-a8f86232-5107-495e-a3dd-a86460eebef6). Part of a master's thesis — full experiment code at [bangkorkor/aquaculture-perception](https://github.com/bangkorkor/aquaculture-perception).
 
 ---
 
@@ -59,6 +59,29 @@ frame_index, track_id, x, y, w, h, is_valid, class_id, visibility
 | 17-40-54 | 63.9 | 1 018 | 994 | 1 595 | 603 | 60 / 28 |
 | 17-55-40 | 50.1 | 796 | 781 | 1 667 | 780 | 65 / 24 |
 | **Total** | **261.0** | **4 583** | **4 065** | **10 512** | **3 650** | **265 / 130** |
+
+---
+
+## Getting Started
+
+**Clone**
+
+```bash
+git clone https://github.com/bangkorkor/solaqua-annotated.git
+cd solaqua-annotated
+```
+
+**Training and evaluation with Ultralytics**
+
+The detection subset is in standard YOLO format and works directly with [Ultralytics](https://github.com/ultralytics/ultralytics). Create a dataset YAML pointing at `dataset/detection/vision` or `dataset/detection/sonar` and use the Ultralytics CLI or Python API to train and evaluate.
+
+**Contributing annotations**
+
+The MOT ground-truth annotations were created in [CVAT](https://www.cvat.ai). CVAT-format exports are included alongside each sequence in `gt_CVAT/`. To extend or correct annotations, import the existing `gt_CVAT/` archive into a CVAT task, make edits, and export back to MOT format to replace `gt/gt.txt`.
+
+**Working with raw data**
+
+The raw ROV recordings (ROS bags) are available at the SINTEF archive linked above. Processing pipelines for extracting frames from the bags and building dataset splits are provided in the master project at [bangkorkor/aquaculture-perception](https://github.com/bangkorkor/aquaculture-perception).
 
 ---
 
