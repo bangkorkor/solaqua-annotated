@@ -85,20 +85,6 @@ The raw ROV recordings (ROS bags) are available at the SINTEF archive linked abo
 
 ---
 
-## Repository Structure
-
-```
-dataset/
-├── detection/
-│   ├── vision/   images/{train,val,test}/  labels/{train,val,test}/
-│   └── sonar/    images/{train,val,test}/  labels/{train,val,test}/
-└── MOT/
-    ├── vision/   <seq-id>/{frames/, gt/gt.txt, gt/labels.txt, gt_CVAT/}
-    └── sonar/    <seq-id>/{frames/, gt/gt.txt, gt/labels.txt, gt_CVAT/}
-```
-
----
-
 ## License
 
 [MIT](LICENSE)
