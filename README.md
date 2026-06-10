@@ -7,7 +7,7 @@
   <img src="docs/sample_sonar.gif" width="48%" alt="Sonar — fish and net (MOT sequence 14-31-29)"/>
 </p>
 
-Annotated dataset for object detection and multi-object tracking (MOT) of fish and net structures in aquaculture net pens. Contains synchronized vision (monocular camera) and sonar (Ping 360) data collected from an ROV at a commercial salmon farm on 20 August 2024.
+Annotated dataset for object detection and multi-object tracking (MOT) of fish and net structures in aquaculture net pens. Contains synchronized vision (monocular camera) and sonar (sonoptix ECHO) data collected from an ROV at a commercial salmon farm.
 
 Raw data provided by [SINTEF Ocean](https://data.sintef.no/feature/fe-a8f86232-5107-495e-a3dd-a86460eebef6). Part of a master's thesis — full experiment code at [bangkorkor/aquaculture-perception](https://github.com/bangkorkor/aquaculture-perception).
 
